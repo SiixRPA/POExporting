@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vWE1X142G0qZQPUsv8Jj1w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="defb8cf0-72df-4f0d-a3c9-e4311f5e77cb" CvElementArea="1894, 22, 19, 18" CvType="CloseButton" DesignTimeRectangle="1880, 8, 48, 48" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIAppFrameHelper' name='Close' /&gt;" Guid="800571ab-b85c-4cb8-9a1b-b0a3483e6ac4" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='PO_1170128 - Excel' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="52d7e105e9dbecf41200ac98a938da65.png" xmlns="">0UElbKhT4f0Wr-QSsLyDX3A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

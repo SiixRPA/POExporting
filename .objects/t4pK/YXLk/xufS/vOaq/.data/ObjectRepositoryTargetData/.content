@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EUvSNOO1_kSQ70jYLeSqWg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="263, 687, 76, 20" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_EBELN-LOW' /&gt;" Guid="c1511978-f43a-4bdf-acac-1f1d7b06ef34" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Purchase Orders List' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="d15f73a8b0c2e496f3e585186b88ddd6.png" xmlns="">0FdwwuPnVXEenRIoeb481WA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

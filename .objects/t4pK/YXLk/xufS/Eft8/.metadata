@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CTextField Supplier's A…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "Eft8mlH4rkG54zcaJT_y4Q",
+  "Reference": "cBwdEa-Cc0KwOgJgWMkKPg/Eft8mlH4rkG54zcaJT_y4Q",
+  "ParentRef": "cBwdEa-Cc0KwOgJgWMkKPg/xufSc4ZuxkWpND37bW2ufQ",
+  "Created": "2025-07-03T10:02:36.952308Z",
+  "Updated": "2025-07-03T10:02:36.952308Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

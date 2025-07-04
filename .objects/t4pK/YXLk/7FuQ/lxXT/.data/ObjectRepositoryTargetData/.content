@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MQPOnt_6v0KgjXBYc4Y9bQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="87, 54, 370, 20" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_FILENAME' /&gt;" Guid="a19f0c15-4cd8-4618-b5e9-78616f82570b" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="f9040e6723ebdb3fb475e9bd665f31bc.png" xmlns="">0tDCtL_UHxUiUESqQfvLgew</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

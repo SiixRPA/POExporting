@@ -1,0 +1,877 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>Microsoft.Graph</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Enums</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1280,10696" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="FolderDate" />
+      <Variable x:TypeArguments="x:String" Name="Day3" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1014,165" sap2010:WorkflowViewState.IdRef="KillProcess_4" ProcessName="saplogon" />
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1014,165" sap2010:WorkflowViewState.IdRef="KillProcess_5" ProcessName="excel" />
+    <Assign sap:VirtualizedContainerService.HintSize="1014,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">FolderDate</CSharpReference>
+        </OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">DateTime.Now.ToString("MM-dd-yyyy hh-mm-ss")</CSharpValue>
+        </InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="1014,114" sap2010:WorkflowViewState.IdRef="Assign_7">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">Day3</CSharpReference>
+        </OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_94">DateTime.Now.AddDays(3).ToString("dd MMMM")</CSharpValue>
+        </InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1014,173" sap2010:WorkflowViewState.IdRef="LogMessage_3">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_91">Day3</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1014,173" sap2010:WorkflowViewState.IdRef="LogMessage_8">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_92">FolderDate</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="1014,112" sap2010:WorkflowViewState.IdRef="CreateDirectory_1">
+      <ui:CreateDirectory.Path>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">"C:\\Users\\RPA\\Documents\\UiPath\\SH_PO Exporting\\Sent\\"+FolderDate</CSharpValue>
+        </InArgument>
+      </ui:CreateDirectory.Path>
+    </ui:CreateDirectory>
+    <uix:NSAPLogon AttachMode="ByInstance" DisplayName="SAP Logon" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1014,9657" sap2010:WorkflowViewState.IdRef="NSAPLogon_2" IsDisplayNameAuto="True" ScopeGuid="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V2">
+      <uix:NSAPLogon.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="980,9447" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSAPLogin Client="100" DisplayName="SAP Login" sap:VirtualizedContainerService.HintSize="946,349" sap2010:WorkflowViewState.IdRef="NSAPLogin_2" Language="En" Option="Single" Password="SMbpoSL03@2024" Username="17BPO07" Version="V4" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'OkCodeField okcd'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="946,250" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Text="/NZA3MM001[k(Enter)]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="3eae0721-0200-4d6f-be5e-815ad15aa8b4" ContentHash="EjyyE4F-DU-shQvOzNQYPA" DesignTimeRectangle="62, 51, 142, 22" ElementType="InputBox" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" Guid="0dd029a2-fc0e-4a3e-b08d-13a618637b98" InformativeScreenshot="20b2964e6393844855e9bd2ef1b33a6f.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/hU2LlT3ZTUOT3GygicNWkQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access  -  User Menu for SH BPO07' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <Sequence sap:VirtualizedContainerService.HintSize="946,8409" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="912,8315" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\\Users\\RPA\\Documents\\UiPath\\SH_PO Exporting\\Template\\Template.xlsx">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Template" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="878,7981" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="844,7919" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" SaveAfterEachRow="False">
+                        <ueab:ExcelForEachRowX.Body>
+                          <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                            <ActivityAction.Argument1>
+                              <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                            </ActivityAction.Argument1>
+                            <ActivityAction.Argument2>
+                              <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                            </ActivityAction.Argument2>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="810,7704" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="SupplierID" />
+                                <Variable x:TypeArguments="x:String" Name="CompanyName" />
+                                <Variable x:TypeArguments="x:String" Name="Subject" />
+                                <Variable x:TypeArguments="x:String" Name="PIC" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="776,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">SupplierID</CSharpReference>
+                                  </OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">CurrentRow.ByIndex[0]</CSharpValue>
+                                  </InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="776,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">CompanyName</CSharpReference>
+                                  </OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">CurrentRow.ByIndex[1]</CSharpValue>
+                                  </InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="776,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">Subject</CSharpReference>
+                                  </OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_80">CurrentRow.ByIndex[5]</CSharpValue>
+                                  </InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="776,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">PIC</CSharpReference>
+                                  </OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">CurrentRow.ByIndex[2]</CSharpValue>
+                                  </InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="776,112" sap2010:WorkflowViewState.IdRef="CreateDirectory_2">
+                                <ui:CreateDirectory.Path>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">"C:\\Users\\RPA\\Documents\\UiPath\\SH_PO Exporting\\Sent\\"+FolderDate+"\\"+SupplierID+"_"+CompanyName</CSharpValue>
+                                  </InArgument>
+                                </ui:CreateDirectory.Path>
+                              </ui:CreateDirectory>
+                              <ui:CopyFile ContinueOnError="{x:Null}" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="776,186" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="C:\\Users\\RPA\\Documents\\UiPath\\SH_PO Exporting\\Template\\SUPP PO BALANCE TEMPLATE.xlsx">
+                                <ui:CopyFile.Destination>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">"C:\\Users\\RPA\\Documents\\UiPath\\SH_PO Exporting\\Sent\\"+FolderDate+"\\"+SupplierID+"_"+CompanyName</CSharpValue>
+                                  </InArgument>
+                                </ui:CopyFile.Destination>
+                              </ui:CopyFile>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'CTextField Purchasing D…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,250" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Text="300*" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="EUvSNOO1_kSQ70jYLeSqWg" DesignTimeRectangle="263, 687, 76, 20" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_EBELN-LOW' /&gt;" Guid="c1511978-f43a-4bdf-acac-1f1d7b06ef34" InformativeScreenshot="d15f73a8b0c2e496f3e585186b88ddd6.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/vOaqmhih4Uev0ABpZatcYQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Purchase Orders List' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'CTextField Supplier's A…(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,250" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="T-hggO4X0EqVTamP-IGfUg" DesignTimeRectangle="263, 665, 76, 20" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_LIFNR-LOW' /&gt;" Guid="e21838ea-ea77-43f9-8d82-f217af345467" InformativeScreenshot="126df80cb4f82898ab88b9ab839711e3.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/Eft8mlH4rkG54zcaJT_y4Q" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Purchase Orders List' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.Text>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">SupplierID</CSharpValue>
+                                  </InArgument>
+                                </uix:NTypeInto.Text>
+                              </uix:NTypeInto>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'BPO SUPP PO'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,250" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Text="BPO SUPP PO" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="3blVpxZz9UaevP3jehFToQ" DesignTimeRectangle="263, 995, 104, 20" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtP_VARI' /&gt;" Guid="14bf3448-5450-4f4e-adcf-3c85ff305748" InformativeScreenshot="91df37f0618d995f01902aafc9cba30f.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/EfVQBa2Kp0KZFKijrJfzGg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Purchase Orders List' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Purchase order List'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,250" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Text="Purchase order list" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="CkcBrHq7kEK-BN74Kako3A" DesignTimeRectangle="263, 181, 216, 20" ElementType="DropDown" FullSelectorArgument="&lt;sap id='usr/cmbP_OPROF' /&gt;" Guid="4b108990-a75c-43b0-afce-0ca308d71a47" InformativeScreenshot="7a99b3fb83816553dd206dbaec0940ba.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/NNxabj9iiUGuNkQsQiJ7OA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Purchase Orders List' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Company Address type'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="mmqNTN8_C0mMvQ-K7pl4FQ" DesignTimeRectangle="39, 197, 202, 20" ElementType="Text" FullSelectorArgument="&lt;sap id='usr/txt%_S_ADKEY_%_APP_%-TEXT' /&gt;" Guid="38b585d1-a2a1-46e6-8f41-bd5ad58edbee" InformativeScreenshot="bc22144934128e35c9123cdfe194e45c.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/TRfNwxN9a0G2Ugoi4xCNiA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Purchase Orders List' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Execute (F8)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="2SYISKTmQ0Sx3cuJykaYOA" DesignTimeRectangle="32, 123, 20, 20" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[1]/btn[8]' /&gt;" Guid="71572767-5f3f-4260-971d-2ee8eae6e4b4" InformativeScreenshot="5037fd5f417ce135a0a5fb4846fedb8a.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/bna3Cf8VGEO2toNM_FvEHg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Purchase Orders List' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'GridViewAllItems Select…(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,225" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="IG7UhtlnCUeuqeB0xHNXzA" DesignTimeRectangle="26, 161, 23, 19" FullSelectorArgument="&lt;sap id='usr/cntlGRID1/shellcont/shell' tableCol='-1' tableRow='-1' /&gt;" Guid="34459d8e-8227-4815-9988-f6f7b2e8bd1c" InformativeScreenshot="e9d7938f48d2802ad3eabee30d51b1e3.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/7aQ4pxpe7k-kpbwMwKjKcA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Purchase Orders List' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Spreadsheet...(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable CVScreenId="8da5bc82-a704-434e-8ca6-49d01e2b231e" ContentHash="t4IcY-tlskuBl9XJH7Yy7A" CvTextArea="27, 186, 82, 15" CvTextArgument="Spreadsheet..." CvType="Text" DesignTimeRectangle="3, 182, 164, 22" FullSelectorArgument="&lt;ctrl name='Context' role='popup menu' /&gt;&lt;ctrl automationid='12' /&gt;" Guid="b8dc054d-5edb-4ccc-8254-648ec3eb3dee" InformativeScreenshot="eb42552726776a03eb7cca608113d4bb.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/-bV5Ki7Y5Ei9VW0lFufLUg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export to...'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="JAWaHYr59EiByoChxr5jwg" DesignTimeRectangle="424, 157, 98, 20" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[20]' /&gt;" Guid="e75e2b3e-6996-419c-b949-46875a33b6ca" InformativeScreenshot="0659ec6dce148e86da40fb2404ddce51.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/lWSI2Dv66kCgq4Kga14kUw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Export As' idx='*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'CTEMP'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,250" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="Ia-Q60IBLUuKg4-t-MsPyA" DesignTimeRectangle="87, 32, 370, 20" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_PATH' /&gt;" Guid="098e820d-c9a6-43ed-a7ce-19deedecd5e5" InformativeScreenshot="8041a1344b69344bd123b332be56cb99.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/XKQAy0HZhkejbZ5akTbuZg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.Text>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">"C:\\Users\\RPA\\Documents\\UiPath\\SH_PO Exporting\\Sent\\"+FolderDate+"\\"+SupplierID+"_"+CompanyName</CSharpValue>
+                                  </InArgument>
+                                </uix:NTypeInto.Text>
+                              </uix:NTypeInto>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'EXPORT_20250703_180704.…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,250" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="MQPOnt_6v0KgjXBYc4Y9bQ" DesignTimeRectangle="87, 54, 370, 20" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtDY_FILENAME' /&gt;" Guid="a19f0c15-4cd8-4618-b5e9-78616f82570b" InformativeScreenshot="f9040e6723ebdb3fb475e9bd665f31bc.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/lxXTzzDWQE-tOU_H-k44Fw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.Text>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">"PO_"+SupplierID+".xlsx"</CSharpValue>
+                                  </InArgument>
+                                </uix:NTypeInto.Text>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Replace'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V4">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="ybHWHSGuZEW2YvOxyUOEwg" DesignTimeRectangle="369, 91, 56, 20" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[11]' /&gt;" Guid="ebe38a7c-d218-4ae6-bf75-f541a1ba3450" InformativeScreenshot="d6f2d05cadf94efae93855dd54e3cc20.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/42_-krfMh0OxFa5Oj-1DSQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Save File' idx='*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="776,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                              <Sequence sap:VirtualizedContainerService.HintSize="776,3673" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:RenameFileX DisplayName="Rename File" sap:VirtualizedContainerService.HintSize="742,175" sap2010:WorkflowViewState.IdRef="RenameFileX_4" KeepExtension="True">
+                                  <ui:RenameFileX.FilePath>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">"C:\\Users\\RPA\\Documents\\UiPath\\SH_PO Exporting\\Sent\\"+FolderDate+"\\"+SupplierID+"_"+CompanyName+"\\SUPP PO BALANCE TEMPLATE.xlsx"</CSharpValue>
+                                    </InArgument>
+                                  </ui:RenameFileX.FilePath>
+                                  <ui:RenameFileX.NewName>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">SupplierID+"_"+CompanyName</CSharpValue>
+                                    </InArgument>
+                                  </ui:RenameFileX.NewName>
+                                </ui:RenameFileX>
+                                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="742,3404" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                                  <ueab:ExcelProcessScopeX.Body>
+                                    <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="708,3292" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="674,3232" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None">
+                                          <ueab:ExcelApplicationCard.Body>
+                                            <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="PO" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="640,2940" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="606,2880" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" SensitivityOperation="None">
+                                                  <ueab:ExcelApplicationCard.Body>
+                                                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                      <ActivityAction.Argument>
+                                                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="MAIN" />
+                                                      </ActivityAction.Argument>
+                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,2588" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                                        <Sequence.Variables>
+                                                          <Variable x:TypeArguments="x:Int32" Name="Value" />
+                                                        </Sequence.Variables>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ueab:CopyPasteRangeX DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="538,272" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_1" PasteOptions="All" Transpose="False">
+                                                          <ueab:CopyPasteRangeX.DestinationRange>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">MAIN.Sheet["Sheet1"].Range["A3:A3"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:CopyPasteRangeX.DestinationRange>
+                                                          <ueab:CopyPasteRangeX.SourceRange>
+                                                            <InArgument x:TypeArguments="ue:IReadRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">PO.Sheet["Sheet1"].Range["A2:M10000"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:CopyPasteRangeX.SourceRange>
+                                                        </ueab:CopyPasteRangeX>
+                                                        <Assign sap:VirtualizedContainerService.HintSize="538,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                          <Assign.To>
+                                                            <OutArgument x:TypeArguments="x:Int32">
+                                                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">Value</CSharpReference>
+                                                            </OutArgument>
+                                                          </Assign.To>
+                                                          <Assign.Value>
+                                                            <InArgument x:TypeArguments="x:Int32">
+                                                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">MAIN.Sheet["Sheet1"].Cell["M1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </Assign.Value>
+                                                        </Assign>
+                                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="538,175" sap2010:WorkflowViewState.IdRef="LogMessage_5">
+                                                          <ui:LogMessage.Message>
+                                                            <InArgument x:TypeArguments="x:Object">
+                                                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">Value</CSharpValue>
+                                                            </InArgument>
+                                                          </ui:LogMessage.Message>
+                                                        </ui:LogMessage>
+                                                        <If sap:VirtualizedContainerService.HintSize="538,1967" sap2010:WorkflowViewState.IdRef="If_1">
+                                                          <If.Condition>
+                                                            <InArgument x:TypeArguments="x:Boolean">
+                                                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">Value &gt;= 0</CSharpValue>
+                                                            </InArgument>
+                                                          </If.Condition>
+                                                          <If.Then>
+                                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="536,919" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,175" sap2010:WorkflowViewState.IdRef="LogMessage_7">
+                                                                <ui:LogMessage.Message>
+                                                                  <InArgument x:TypeArguments="x:Object">
+                                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">"With VALUE_"+SupplierID+"TOtal __"+Value</CSharpValue>
+                                                                  </InArgument>
+                                                                </ui:LogMessage.Message>
+                                                              </ui:LogMessage>
+                                                              <umab:OutlookApplicationCard Account="RPA.BPO03@siix-global.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="502,684" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_1">
+                                                                <umab:OutlookApplicationCard.Body>
+                                                                  <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                                                                    <ActivityAction.Argument>
+                                                                      <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
+                                                                    </ActivityAction.Argument>
+                                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,479" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                      <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Cc="angelica.bonaobra@siix-global.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,419" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" To="lesterlee.lusung@siix-global.com" UseDocumentAsBody="False">
+                                                                        <umab:SendMailX.Account>
+                                                                          <InArgument x:TypeArguments="um:IMailQuickHandle">
+                                                                            <CSharpValue x:TypeArguments="um:IMailQuickHandle" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">Outlook</CSharpValue>
+                                                                          </InArgument>
+                                                                        </umab:SendMailX.Account>
+                                                                        <umab:SendMailX.Files>
+                                                                          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                                                                            <InArgument x:TypeArguments="x:String">
+                                                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_95">"Sent\\"+FolderDate+"\\"+SupplierID+"_"+CompanyName+"\\"+SupplierID+"_"+CompanyName+".xlsx"</CSharpValue>
+                                                                            </InArgument>
+                                                                          </scg:List>
+                                                                        </umab:SendMailX.Files>
+                                                                        <umab:SendMailX.HtmlBodyFromFile>
+                                                                          <umabh:HtmlContentArgument HtmlBody="{x:Null}" FilePath=".data/HtmlContent0.html">
+                                                                            <umabh:HtmlContentArgument.RuntimeImages>
+                                                                              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                                            </umabh:HtmlContentArgument.RuntimeImages>
+                                                                            <umabh:HtmlContentArgument.ValueMappings>
+                                                                              <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="4">
+                                                                                <umabh:HtmlTextValueMapping Name="Value">
+                                                                                  <umabh:HtmlTextValueMapping.Value>
+                                                                                    <InArgument x:TypeArguments="x:Object">
+                                                                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">Value</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </umabh:HtmlTextValueMapping.Value>
+                                                                                </umabh:HtmlTextValueMapping>
+                                                                                <umabh:HtmlTextValueMapping Name="PIC">
+                                                                                  <umabh:HtmlTextValueMapping.Value>
+                                                                                    <InArgument x:TypeArguments="x:Object">
+                                                                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85">PIC</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </umabh:HtmlTextValueMapping.Value>
+                                                                                </umabh:HtmlTextValueMapping>
+                                                                                <umabh:HtmlTextValueMapping Name="day3">
+                                                                                  <umabh:HtmlTextValueMapping.Value>
+                                                                                    <InArgument x:TypeArguments="x:Object">
+                                                                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_96">Day3</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </umabh:HtmlTextValueMapping.Value>
+                                                                                </umabh:HtmlTextValueMapping>
+                                                                              </scg:List>
+                                                                            </umabh:HtmlContentArgument.ValueMappings>
+                                                                          </umabh:HtmlContentArgument>
+                                                                        </umab:SendMailX.HtmlBodyFromFile>
+                                                                        <umab:SendMailX.Subject>
+                                                                          <InArgument x:TypeArguments="x:String">
+                                                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">Subject</CSharpValue>
+                                                                          </InArgument>
+                                                                        </umab:SendMailX.Subject>
+                                                                      </umab:SendMailX>
+                                                                    </Sequence>
+                                                                  </ActivityAction>
+                                                                </umab:OutlookApplicationCard.Body>
+                                                              </umab:OutlookApplicationCard>
+                                                            </Sequence>
+                                                          </If.Then>
+                                                          <If.Else>
+                                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="536,919" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,175" sap2010:WorkflowViewState.IdRef="LogMessage_6">
+                                                                <ui:LogMessage.Message>
+                                                                  <InArgument x:TypeArguments="x:Object">
+                                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">"NO VALUE_"+SupplierID+"TOtal __"+Value</CSharpValue>
+                                                                  </InArgument>
+                                                                </ui:LogMessage.Message>
+                                                              </ui:LogMessage>
+                                                              <umab:OutlookApplicationCard Account="RPA.BPO03@siix-global.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="502,684" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_4">
+                                                                <umab:OutlookApplicationCard.Body>
+                                                                  <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                                                                    <ActivityAction.Argument>
+                                                                      <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
+                                                                    </ActivityAction.Argument>
+                                                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,479" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                                                      <sap:WorkflowViewStateService.ViewState>
+                                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                        </scg:Dictionary>
+                                                                      </sap:WorkflowViewStateService.ViewState>
+                                                                      <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Cc="angelica.bonaobra@siix-global.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,419" sap2010:WorkflowViewState.IdRef="SendMailX_8" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" To="lesterlee.lusung@siix-global.com" UseDocumentAsBody="False">
+                                                                        <umab:SendMailX.Account>
+                                                                          <InArgument x:TypeArguments="um:IMailQuickHandle">
+                                                                            <CSharpValue x:TypeArguments="um:IMailQuickHandle" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">Outlook</CSharpValue>
+                                                                          </InArgument>
+                                                                        </umab:SendMailX.Account>
+                                                                        <umab:SendMailX.Files>
+                                                                          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                                                                            <InArgument x:TypeArguments="x:String">
+                                                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_105">"Sent\\"+FolderDate+"\\"+SupplierID+"_"+CompanyName+"\\"+SupplierID+"_"+CompanyName+".xlsx"</CSharpValue>
+                                                                            </InArgument>
+                                                                          </scg:List>
+                                                                        </umab:SendMailX.Files>
+                                                                        <umab:SendMailX.HtmlBodyFromFile>
+                                                                          <umabh:HtmlContentArgument HtmlBody="{x:Null}" FilePath=".data/HtmlContent0.html">
+                                                                            <umabh:HtmlContentArgument.RuntimeImages>
+                                                                              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                                            </umabh:HtmlContentArgument.RuntimeImages>
+                                                                            <umabh:HtmlContentArgument.ValueMappings>
+                                                                              <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="4">
+                                                                                <umabh:HtmlTextValueMapping Name="Value">
+                                                                                  <umabh:HtmlTextValueMapping.Value>
+                                                                                    <InArgument x:TypeArguments="x:Object">
+                                                                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_106">Value</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </umabh:HtmlTextValueMapping.Value>
+                                                                                </umabh:HtmlTextValueMapping>
+                                                                                <umabh:HtmlTextValueMapping Name="PIC">
+                                                                                  <umabh:HtmlTextValueMapping.Value>
+                                                                                    <InArgument x:TypeArguments="x:Object">
+                                                                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_107">PIC</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </umabh:HtmlTextValueMapping.Value>
+                                                                                </umabh:HtmlTextValueMapping>
+                                                                                <umabh:HtmlTextValueMapping Name="day3">
+                                                                                  <umabh:HtmlTextValueMapping.Value>
+                                                                                    <InArgument x:TypeArguments="x:Object">
+                                                                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_108">Day3</CSharpValue>
+                                                                                    </InArgument>
+                                                                                  </umabh:HtmlTextValueMapping.Value>
+                                                                                </umabh:HtmlTextValueMapping>
+                                                                              </scg:List>
+                                                                            </umabh:HtmlContentArgument.ValueMappings>
+                                                                          </umabh:HtmlContentArgument>
+                                                                        </umab:SendMailX.HtmlBodyFromFile>
+                                                                        <umab:SendMailX.Subject>
+                                                                          <InArgument x:TypeArguments="x:String">
+                                                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_104">Subject</CSharpValue>
+                                                                          </InArgument>
+                                                                        </umab:SendMailX.Subject>
+                                                                      </umab:SendMailX>
+                                                                    </Sequence>
+                                                                  </ActivityAction>
+                                                                </umab:OutlookApplicationCard.Body>
+                                                              </umab:OutlookApplicationCard>
+                                                            </Sequence>
+                                                          </If.Else>
+                                                        </If>
+                                                      </Sequence>
+                                                    </ActivityAction>
+                                                  </ueab:ExcelApplicationCard.Body>
+                                                  <ueab:ExcelApplicationCard.WorkbookPath>
+                                                    <InArgument x:TypeArguments="x:String">
+                                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">"Sent\\"+FolderDate+"\\"+SupplierID+"_"+CompanyName+"\\"+SupplierID+"_"+CompanyName+".xlsx"</CSharpValue>
+                                                    </InArgument>
+                                                  </ueab:ExcelApplicationCard.WorkbookPath>
+                                                </ueab:ExcelApplicationCard>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ueab:ExcelApplicationCard.Body>
+                                          <ueab:ExcelApplicationCard.WorkbookPath>
+                                            <InArgument x:TypeArguments="x:String">
+                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">"Sent\\"+FolderDate+"\\"+SupplierID+"_"+CompanyName+"\\PO_"+SupplierID+".xlsx"</CSharpValue>
+                                            </InArgument>
+                                          </ueab:ExcelApplicationCard.WorkbookPath>
+                                        </ueab:ExcelApplicationCard>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ueab:ExcelProcessScopeX.Body>
+                                </ueab:ExcelProcessScopeX>
+                              </Sequence>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'OkCodeField okcd'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,243" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Text="/NZA3MM001[k(Enter)]" Version="V4">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable CVScreenId="3eae0721-0200-4d6f-be5e-815ad15aa8b4" ContentHash="EjyyE4F-DU-shQvOzNQYPA" DesignTimeRectangle="62, 51, 142, 22" ElementType="InputBox" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" Guid="0dd029a2-fc0e-4a3e-b08d-13a618637b98" InformativeScreenshot="20b2964e6393844855e9bd2ef1b33a6f.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/hU2LlT3ZTUOT3GygicNWkQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access  -  User Menu for SH BPO07' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                            </Sequence>
+                          </ActivityAction>
+                        </ueab:ExcelForEachRowX.Body>
+                        <ueab:ExcelForEachRowX.Range>
+                          <InArgument x:TypeArguments="ue:IReadRangeRef">
+                            <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">Template.Sheet["Sheet1"].Range["C1:C100000"]</CSharpValue>
+                          </InArgument>
+                        </ueab:ExcelForEachRowX.Range>
+                      </ueab:ExcelForEachRowX>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ueab:ExcelApplicationCard>
+            </Sequence>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="946,377" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,273" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEachFolderX DisplayName="For Each Folder in Folder" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="ForEachFolderX_2" IncludeSubFolders="False" OrderBy="NameAscFirst" SkipFoldersWithoutPermission="False">
+                    <ui:ForEachFolderX.Body>
+                      <ActivityAction x:TypeArguments="si:DirectoryInfo, x:Int32">
+                        <ActivityAction.Argument1>
+                          <DelegateInArgument x:TypeArguments="si:DirectoryInfo" Name="CurrentFolder" />
+                        </ActivityAction.Argument1>
+                        <ActivityAction.Argument2>
+                          <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                        </ActivityAction.Argument2>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,666" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,175" sap2010:WorkflowViewState.IdRef="LogMessage_4">
+                            <ui:LogMessage.Message>
+                              <InArgument x:TypeArguments="x:Object">
+                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">CurrentFolder.Name</CSharpValue>
+                              </InArgument>
+                            </ui:LogMessage.Message>
+                          </ui:LogMessage>
+                          <ui:ForEachFileX DisplayName="For Each File in Folder" sap:VirtualizedContainerService.HintSize="484,517" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                            <ui:ForEachFileX.Body>
+                              <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+                                <ActivityAction.Argument1>
+                                  <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+                                </ActivityAction.Argument1>
+                                <ActivityAction.Argument2>
+                                  <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                </ActivityAction.Argument2>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:RenameFileX DisplayName="Rename File" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="RenameFileX_3" KeepExtension="True">
+                                    <ui:RenameFileX.FilePath>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">CurrentFile.FullName</CSharpValue>
+                                      </InArgument>
+                                    </ui:RenameFileX.FilePath>
+                                    <ui:RenameFileX.NewName>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">CurrentFolder.Name</CSharpValue>
+                                      </InArgument>
+                                    </ui:RenameFileX.NewName>
+                                  </ui:RenameFileX>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEachFileX.Body>
+                            <ui:ForEachFileX.Folder>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">CurrentFolder.FullName</CSharpValue>
+                              </InArgument>
+                            </ui:ForEachFileX.Folder>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:ForEachFileX>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachFolderX.Body>
+                    <ui:ForEachFolderX.Folder>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">"C:\\Users\\RPA\\OneDrive - シークス株式会社\\PO Balance Exporting\\Sent\\"+FolderDate</CSharpValue>
+                      </InArgument>
+                    </ui:ForEachFolderX.Folder>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEachFolderX>
+                  <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="416,156" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="saplogon" />
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NSAPLogon.Body>
+      <uix:NSAPLogon.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" Arguments="0203_S4_ProductionSystem on AWS" FilePath="C:\\Program Files (x86)\\SAP\\FrontEnd\\SAPGUI\\saplogon.exe" Version="V2" />
+      </uix:NSAPLogon.TargetApp>
+    </uix:NSAPLogon>
+  </Sequence>
+</Activity>

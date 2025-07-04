@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="t4IcY-tlskuBl9XJH7Yy7A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="8da5bc82-a704-434e-8ca6-49d01e2b231e" CvTextArea="27, 186, 82, 15" CvTextArgument="Spreadsheet..." CvType="Text" DesignTimeRectangle="3, 182, 164, 22" FullSelectorArgument="&lt;ctrl name='Context' role='popup menu' /&gt;&lt;ctrl automationid='12' /&gt;" Guid="b8dc054d-5edb-4ccc-8254-648ec3eb3dee" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32768' idx='*' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="eb42552726776a03eb7cca608113d4bb.png" xmlns="">0hNdPyKgQAE64nK1hXMeffA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

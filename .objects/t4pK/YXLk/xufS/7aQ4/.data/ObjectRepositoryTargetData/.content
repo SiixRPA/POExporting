@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IG7UhtlnCUeuqeB0xHNXzA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="26, 161, 23, 19" FullSelectorArgument="&lt;sap id='usr/cntlGRID1/shellcont/shell' tableCol='-1' tableRow='-1' /&gt;" Guid="34459d8e-8227-4815-9988-f6f7b2e8bd1c" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Purchase Orders List' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="e9d7938f48d2802ad3eabee30d51b1e3.png" xmlns="">0fmMv9dqifUamOUwFPIZGxA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

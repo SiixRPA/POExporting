@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CTextField Purchasing D…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "vOaqmhih4Uev0ABpZatcYQ",
+  "Reference": "cBwdEa-Cc0KwOgJgWMkKPg/vOaqmhih4Uev0ABpZatcYQ",
+  "ParentRef": "cBwdEa-Cc0KwOgJgWMkKPg/xufSc4ZuxkWpND37bW2ufQ",
+  "Created": "2025-07-03T10:01:43.982236Z",
+  "Updated": "2025-07-03T10:01:43.982236Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

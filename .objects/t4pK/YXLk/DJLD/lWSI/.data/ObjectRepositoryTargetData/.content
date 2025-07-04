@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JAWaHYr59EiByoChxr5jwg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="424, 157, 98, 20" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[20]' /&gt;" Guid="e75e2b3e-6996-419c-b949-46875a33b6ca" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Export As' idx='*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="0659ec6dce148e86da40fb2404ddce51.png" xmlns="">0Wk7P44blbEKTGIUBXlSFmA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

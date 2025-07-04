@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EjyyE4F-DU-shQvOzNQYPA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="3eae0721-0200-4d6f-be5e-815ad15aa8b4" DesignTimeRectangle="62, 51, 142, 22" ElementType="InputBox" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" Guid="0dd029a2-fc0e-4a3e-b08d-13a618637b98" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access  -  User Menu for SH BPO07' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="20b2964e6393844855e9bd2ef1b33a6f.png" xmlns="">0NmtzrVRNAUOO4J6EpaHwfQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

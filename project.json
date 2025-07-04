@@ -1,0 +1,63 @@
+{
+  "name": "SH_PO Exporting",
+  "projectId": "27739dd7-195a-450b-9c97-41ae5290fae4",
+  "description": "PO Exporting for supplier",
+  "main": "Main.xaml",
+  "dependencies": {
+    "Adrosonic.EmailFileReader.Activities": "[1.0.6]",
+    "UiPath.Excel.Activities": "[3.1.1]",
+    "UiPath.Mail.Activities": "[2.2.10]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.2.10]",
+    "UiPath.System.Activities": "[25.4.4]",
+    "UiPath.UIAutomation.Activities": "[25.10.7]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.0.167.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "CSharp",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "9cc2c4e8-4edd-4370-96bd-9287980f80c7",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "GridViewAllItems Select…",
+  "Type": "Element",
+  "Id": "MrGKuUzNtUqHQkPsD29lbA",
+  "Reference": "cBwdEa-Cc0KwOgJgWMkKPg/MrGKuUzNtUqHQkPsD29lbA",
+  "ParentRef": "cBwdEa-Cc0KwOgJgWMkKPg/xufSc4ZuxkWpND37bW2ufQ",
+  "Created": "2025-07-01T05:31:14.2410344Z",
+  "Updated": "2025-07-01T05:31:14.2410344Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "SAP Logon 800",
+  "Type": "App",
+  "Id": "t4pKJ712s0G-NNcD_nyScQ",
+  "Reference": "cBwdEa-Cc0KwOgJgWMkKPg/t4pKJ712s0G-NNcD_nyScQ",
+  "Created": "2025-06-27T03:48:37.093641Z",
+  "Updated": "2025-06-27T03:48:37.093641Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
