@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ueabf="clr-namespace:UiPath.Excel.Activities.Business.Filter;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -72,6 +72,7 @@
       <x:String>UiPath.Mail.Activities.Utils</x:String>
       <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Excel.Activities.Business.Filter</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -153,7 +154,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1280,10696" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1166,11459" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="FolderDate" />
       <Variable x:TypeArguments="x:String" Name="Day3" />
@@ -210,13 +211,13 @@
         </InArgument>
       </ui:CreateDirectory.Path>
     </ui:CreateDirectory>
-    <uix:NSAPLogon AttachMode="ByInstance" DisplayName="SAP Logon" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1014,9657" sap2010:WorkflowViewState.IdRef="NSAPLogon_2" IsDisplayNameAuto="True" ScopeGuid="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V2">
+    <uix:NSAPLogon AttachMode="ByInstance" DisplayName="SAP Logon" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1014,10420" sap2010:WorkflowViewState.IdRef="NSAPLogon_2" IsDisplayNameAuto="True" ScopeGuid="dd48d017-26ab-438a-b23e-3b6442966b9c" Version="V2">
       <uix:NSAPLogon.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="980,9447" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="980,10210" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -228,26 +229,26 @@
                 <uix:TargetAnchorable CVScreenId="3eae0721-0200-4d6f-be5e-815ad15aa8b4" ContentHash="EjyyE4F-DU-shQvOzNQYPA" DesignTimeRectangle="62, 51, 142, 22" ElementType="InputBox" FullSelectorArgument="&lt;sap id='tbar[0]/okcd' /&gt;" Guid="0dd029a2-fc0e-4a3e-b08d-13a618637b98" InformativeScreenshot="20b2964e6393844855e9bd2ef1b33a6f.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/hU2LlT3ZTUOT3GygicNWkQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access  -  User Menu for SH BPO07' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <Sequence sap:VirtualizedContainerService.HintSize="946,8409" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence sap:VirtualizedContainerService.HintSize="946,9172" sap2010:WorkflowViewState.IdRef="Sequence_13">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="912,8315" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\\Users\\RPA\\Documents\\UiPath\\SH_PO Exporting\\Template\\Template.xlsx">
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="912,9078" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\\Users\\RPA\\Documents\\UiPath\\SH_PO Exporting\\Template\\Template.xlsx">
                 <ueab:ExcelApplicationCard.Body>
                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Template" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="878,7981" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="878,8744" sap2010:WorkflowViewState.IdRef="Sequence_2">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="844,7919" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="844,8682" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" SaveAfterEachRow="False">
                         <ueab:ExcelForEachRowX.Body>
                           <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                             <ActivityAction.Argument1>
@@ -256,12 +257,14 @@
                             <ActivityAction.Argument2>
                               <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                             </ActivityAction.Argument2>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="810,7704" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="810,8467" sap2010:WorkflowViewState.IdRef="Sequence_3">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="x:String" Name="SupplierID" />
                                 <Variable x:TypeArguments="x:String" Name="CompanyName" />
                                 <Variable x:TypeArguments="x:String" Name="Subject" />
                                 <Variable x:TypeArguments="x:String" Name="PIC" />
+                                <Variable x:TypeArguments="x:String" Name="PicEmail" />
+                                <Variable x:TypeArguments="x:String" Name="EmailCC" />
                               </Sequence.Variables>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -316,6 +319,30 @@
                                   </InArgument>
                                 </Assign.Value>
                               </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="776,114" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">PicEmail</CSharpReference>
+                                  </OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_113">CurrentRow.ByIndex[3]</CSharpValue>
+                                  </InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="776,114" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">EmailCC</CSharpReference>
+                                  </OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_114">CurrentRow.ByIndex[4]</CSharpValue>
+                                  </InArgument>
+                                </Assign.Value>
+                              </Assign>
                               <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="776,112" sap2010:WorkflowViewState.IdRef="CreateDirectory_2">
                                 <ui:CreateDirectory.Path>
                                   <InArgument x:TypeArguments="x:String">
@@ -330,7 +357,7 @@
                                   </InArgument>
                                 </ui:CopyFile.Destination>
                               </ui:CopyFile>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'CTextField Purchasing D…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,250" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Text="300*" Version="V4">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'CTextField Purchasing D…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="776,250" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="dd48d017-26ab-438a-b23e-3b6442966b9c" Text="3000*" Version="V4">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable ContentHash="EUvSNOO1_kSQ70jYLeSqWg" DesignTimeRectangle="263, 687, 76, 20" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtS_EBELN-LOW' /&gt;" Guid="c1511978-f43a-4bdf-acac-1f1d7b06ef34" InformativeScreenshot="d15f73a8b0c2e496f3e585186b88ddd6.png" Reference="cBwdEa-Cc0KwOgJgWMkKPg/vOaqmhih4Uev0ABpZatcYQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Purchase Orders List' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                                 </uix:NTypeInto.Target>
@@ -466,7 +493,7 @@
                                 </uix:NClick.VerifyOptions>
                               </uix:NClick>
                               <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="776,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                              <Sequence sap:VirtualizedContainerService.HintSize="776,3673" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                              <Sequence sap:VirtualizedContainerService.HintSize="776,4208" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -484,37 +511,37 @@
                                     </InArgument>
                                   </ui:RenameFileX.NewName>
                                 </ui:RenameFileX>
-                                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="742,3404" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                                <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="742,3939" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
                                   <ueab:ExcelProcessScopeX.Body>
                                     <ActivityAction x:TypeArguments="ui:IExcelProcess">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                                       </ActivityAction.Argument>
-                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="708,3292" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="708,3827" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="674,3232" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None">
+                                        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="674,3767" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None">
                                           <ueab:ExcelApplicationCard.Body>
                                             <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                               <ActivityAction.Argument>
                                                 <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="PO" />
                                               </ActivityAction.Argument>
-                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="640,2940" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="640,3475" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="606,2880" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" SensitivityOperation="None">
+                                                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="606,3415" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" SensitivityOperation="None">
                                                   <ueab:ExcelApplicationCard.Body>
                                                     <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                                       <ActivityAction.Argument>
                                                         <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="MAIN" />
                                                       </ActivityAction.Argument>
-                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,2588" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,3123" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                                         <Sequence.Variables>
                                                           <Variable x:TypeArguments="x:Int32" Name="Value" />
                                                         </Sequence.Variables>
@@ -535,6 +562,43 @@
                                                             </InArgument>
                                                           </ueab:CopyPasteRangeX.SourceRange>
                                                         </ueab:CopyPasteRangeX>
+                                                        <ueab:FilterX ClearFilter="False" ColumnName="Still to be delivered (qty)" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="538,201" sap2010:WorkflowViewState.IdRef="FilterX_1">
+                                                          <ueab:FilterX.FilterArgument>
+                                                            <ueabf:FilterArgument Mode="Advanced">
+                                                              <ueabf:FilterArgument.AdvancedFiltersArgument>
+                                                                <ueabf:AdvancedFilterArgument LogicalOperator="And">
+                                                                  <ueabf:AdvancedFilterArgument.Condition1>
+                                                                    <ueabf:AdvancedFilterCondition Operator="NOTEQ" Value="0" />
+                                                                  </ueabf:AdvancedFilterArgument.Condition1>
+                                                                  <ueabf:AdvancedFilterArgument.Condition2>
+                                                                    <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                                                  </ueabf:AdvancedFilterArgument.Condition2>
+                                                                </ueabf:AdvancedFilterArgument>
+                                                              </ueabf:FilterArgument.AdvancedFiltersArgument>
+                                                              <ueabf:FilterArgument.BasicFiltersArgument>
+                                                                <ueabf:BasicFilterArgument>
+                                                                  <ueabf:BasicFilterArgument.BasicFilters>
+                                                                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                                                                      <x:Null />
+                                                                    </scg:List>
+                                                                  </ueabf:BasicFilterArgument.BasicFilters>
+                                                                </ueabf:BasicFilterArgument>
+                                                              </ueabf:FilterArgument.BasicFiltersArgument>
+                                                            </ueabf:FilterArgument>
+                                                          </ueab:FilterX.FilterArgument>
+                                                          <ueab:FilterX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_109">MAIN.Sheet["Sheet1"].Range["A2:M100000"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:FilterX.Range>
+                                                        </ueab:FilterX>
+                                                        <ueab:DeleteRowsX RowPositions="{x:Null}" DeleteRowsOption="Hidden" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="538,170" sap2010:WorkflowViewState.IdRef="DeleteRowsX_1">
+                                                          <ueab:DeleteRowsX.Range>
+                                                            <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                                                              <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_110">MAIN.Sheet["Sheet1"]</CSharpValue>
+                                                            </InArgument>
+                                                          </ueab:DeleteRowsX.Range>
+                                                        </ueab:DeleteRowsX>
                                                         <Assign sap:VirtualizedContainerService.HintSize="538,114" sap2010:WorkflowViewState.IdRef="Assign_4">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:Int32">
@@ -554,7 +618,7 @@
                                                             </InArgument>
                                                           </ui:LogMessage.Message>
                                                         </ui:LogMessage>
-                                                        <If sap:VirtualizedContainerService.HintSize="538,1967" sap2010:WorkflowViewState.IdRef="If_1">
+                                                        <If sap:VirtualizedContainerService.HintSize="538,2131" sap2010:WorkflowViewState.IdRef="If_1">
                                                           <If.Condition>
                                                             <InArgument x:TypeArguments="x:Boolean">
                                                               <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">Value &gt;= 0</CSharpValue>
@@ -574,7 +638,7 @@
                                                                   </InArgument>
                                                                 </ui:LogMessage.Message>
                                                               </ui:LogMessage>
-                                                              <umab:OutlookApplicationCard Account="RPA.BPO03@siix-global.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="502,684" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_1">
+                                                              <umab:OutlookApplicationCard Account="shbpo02@siix-global.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="502,684" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_6">
                                                                 <umab:OutlookApplicationCard.Body>
                                                                   <ActivityAction x:TypeArguments="um:IMailQuickHandle">
                                                                     <ActivityAction.Argument>
@@ -586,12 +650,17 @@
                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                         </scg:Dictionary>
                                                                       </sap:WorkflowViewStateService.ViewState>
-                                                                      <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Cc="angelica.bonaobra@siix-global.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,419" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" To="lesterlee.lusung@siix-global.com" UseDocumentAsBody="False">
+                                                                      <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,419" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" UseDocumentAsBody="False">
                                                                         <umab:SendMailX.Account>
                                                                           <InArgument x:TypeArguments="um:IMailQuickHandle">
                                                                             <CSharpValue x:TypeArguments="um:IMailQuickHandle" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">Outlook</CSharpValue>
                                                                           </InArgument>
                                                                         </umab:SendMailX.Account>
+                                                                        <umab:SendMailX.Cc>
+                                                                          <InArgument x:TypeArguments="x:String">
+                                                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_121">EmailCC</CSharpValue>
+                                                                          </InArgument>
+                                                                        </umab:SendMailX.Cc>
                                                                         <umab:SendMailX.Files>
                                                                           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
                                                                             <InArgument x:TypeArguments="x:String">
@@ -636,15 +705,32 @@
                                                                             <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">Subject</CSharpValue>
                                                                           </InArgument>
                                                                         </umab:SendMailX.Subject>
+                                                                        <umab:SendMailX.To>
+                                                                          <InArgument x:TypeArguments="x:String">
+                                                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_120">PicEmail</CSharpValue>
+                                                                          </InArgument>
+                                                                        </umab:SendMailX.To>
+                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                          </scg:Dictionary>
+                                                                        </sap:WorkflowViewStateService.ViewState>
                                                                       </umab:SendMailX>
                                                                     </Sequence>
                                                                   </ActivityAction>
                                                                 </umab:OutlookApplicationCard.Body>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
                                                               </umab:OutlookApplicationCard>
                                                             </Sequence>
                                                           </If.Then>
                                                           <If.Else>
-                                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="536,919" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="536,1083" sap2010:WorkflowViewState.IdRef="Sequence_30">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -657,7 +743,19 @@
                                                                   </InArgument>
                                                                 </ui:LogMessage.Message>
                                                               </ui:LogMessage>
-                                                              <umab:OutlookApplicationCard Account="RPA.BPO03@siix-global.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="502,684" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_4">
+                                                              <ui:RenameFolderX DisplayName="Rename Folder" sap:VirtualizedContainerService.HintSize="502,164" sap2010:WorkflowViewState.IdRef="RenameFolderX_1">
+                                                                <ui:RenameFolderX.FolderPath>
+                                                                  <InArgument x:TypeArguments="x:String">
+                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_129">"Sent\\"+FolderDate+"\\"+SupplierID+"_"+CompanyName</CSharpValue>
+                                                                  </InArgument>
+                                                                </ui:RenameFolderX.FolderPath>
+                                                                <ui:RenameFolderX.NewName>
+                                                                  <InArgument x:TypeArguments="x:String">
+                                                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_130">SupplierID+"_"+CompanyName+"_NoValue"</CSharpValue>
+                                                                  </InArgument>
+                                                                </ui:RenameFolderX.NewName>
+                                                              </ui:RenameFolderX>
+                                                              <umab:OutlookApplicationCard Account="shbpo02@siix-global.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="502,684" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_7">
                                                                 <umab:OutlookApplicationCard.Body>
                                                                   <ActivityAction x:TypeArguments="um:IMailQuickHandle">
                                                                     <ActivityAction.Argument>
@@ -669,7 +767,7 @@
                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                         </scg:Dictionary>
                                                                       </sap:WorkflowViewStateService.ViewState>
-                                                                      <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Cc="angelica.bonaobra@siix-global.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,419" sap2010:WorkflowViewState.IdRef="SendMailX_8" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" To="lesterlee.lusung@siix-global.com" UseDocumentAsBody="False">
+                                                                      <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Cc="angelica.bonaobra@siix-global.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,419" sap2010:WorkflowViewState.IdRef="SendMailX_8" Importance="Normal" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" To="lesterlee.lusung@siix-global.com" UseDocumentAsBody="False">
                                                                         <umab:SendMailX.Account>
                                                                           <InArgument x:TypeArguments="um:IMailQuickHandle">
                                                                             <CSharpValue x:TypeArguments="um:IMailQuickHandle" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">Outlook</CSharpValue>
@@ -716,13 +814,19 @@
                                                                         </umab:SendMailX.HtmlBodyFromFile>
                                                                         <umab:SendMailX.Subject>
                                                                           <InArgument x:TypeArguments="x:String">
-                                                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_104">Subject</CSharpValue>
+                                                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_131">Subject+"_NoValue"</CSharpValue>
                                                                           </InArgument>
                                                                         </umab:SendMailX.Subject>
                                                                       </umab:SendMailX>
                                                                     </Sequence>
                                                                   </ActivityAction>
                                                                 </umab:OutlookApplicationCard.Body>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
                                                               </umab:OutlookApplicationCard>
                                                             </Sequence>
                                                           </If.Else>
@@ -792,7 +896,7 @@
                         <ActivityAction.Argument2>
                           <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                         </ActivityAction.Argument2>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,666" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,750" sap2010:WorkflowViewState.IdRef="Sequence_19">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -805,7 +909,7 @@
                               </InArgument>
                             </ui:LogMessage.Message>
                           </ui:LogMessage>
-                          <ui:ForEachFileX DisplayName="For Each File in Folder" sap:VirtualizedContainerService.HintSize="484,517" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                          <ui:ForEachFileX DisplayName="For Each File in Folder" sap:VirtualizedContainerService.HintSize="484,513" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                             <ui:ForEachFileX.Body>
                               <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                                 <ActivityAction.Argument1>
